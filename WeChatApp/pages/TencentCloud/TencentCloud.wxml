@@ -1,0 +1,68 @@
+<view class="logo">
+  <image src='/image/catdog_2.png'></image>
+</view>
+<view class="switch">
+      <button class="controlBtn" bindtap="onClickcontrol">控制页面</button>
+      <button class="monitorBtn" bindtap="onClickmonitor">监控页面</button>
+</view>
+<view class="body">
+  <view style="font-weight: bold;">
+    喵狗派
+  </view>
+  <text>\n</text>
+  <view class="box">
+    <view class="cell">
+      <view class="status-left">设备ID</view>
+      <view class="status-right">{{productId}}</view>
+    </view>
+    <view class="cell">
+      <view class="status-left">设备名称</view>
+      <view class="status-right">{{deviceName}}</view>
+    </view>
+  </view>
+
+  <text>\n</text>
+
+  <form bindsubmit="">
+    <view style="display:flex; flex-direction:row; justify-content: space-between;">
+      <view style="font-weight: bold;">
+        获取云端数据
+      </view>
+      <view>
+        <button type="primary" size="mini" bindtap="update">刷新</button>
+      </view>
+    </view>
+    <view class="box">
+      <view class="cell">
+        <view>喂猫粮</view>
+        <view>
+          <switch name="motor_cat" data-item="motor_cat" checked="{{stateReported.motor_cat}}" bindchange="switchChange"/>
+        </view>
+      </view>
+      <view class="cell">
+        <view>喂狗粮</view>
+        <view>
+          <switch name="motor_dog" data-item="motor_dog" checked="{{stateReported.motor_dog}}" bindchange="switchChange"/>
+        </view>
+      </view>
+      <view class="cell">
+        <view class="left">猫粮剩余</view>
+        <view class="right">
+          {{stateReported.cat_food}}
+        </view>
+        <view class="unit">g</view>
+      </view>
+      <view class="cell">
+        <view class="left">狗粮剩余</view>
+        <view class="right">
+          {{stateReported.dog_food}}
+        </view>
+        <view class="unit">g</view>
+      
+        <!-- <view class="left">光照强度</view>
+        <view class="right">{{stateReported.light_intensity}}</view>
+        <view class="unit">lux</view> -->
+      </view>
+    </view>
+  </form>
+</view>

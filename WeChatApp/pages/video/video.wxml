@@ -1,0 +1,19 @@
+<!--pages/outer.wxml-->
+<view class="logo">
+  <image src='/image/catdog_2.png'></image>
+</view>
+<view class="switch">
+      <button class="controlBtn" bindtap="onClickcontrol">控制页面</button>
+      <button class="monitorBtn"  bindtap="onClickmonitor">监控页面</button>
+</view>
+
+<video 
+  id="myVideo" 
+  class="video" 
+  style="height: 240px;width: 750rpx;" 
+  src="cloud://hi3861-mqtt-5gink7ny90be6af6.6869-hi3861-mqtt-5gink7ny90be6af6-1318313313/catdog.webm"
+  page-gesture="true"
+
+></video>
+<!-- <web-view> src="http://tan33g.natappfree.cc" </web-view> -->
+

@@ -1,0 +1,19 @@
+/* pages/signup.wxss */
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo image{
+  margin-top: 100rpx;
+  width: 300rpx;
+  height: 200rpx;
+}
+.form .form-group{
+  margin-top: 80rpx;
+  color: #fff;
+  border: 2rpx solid #00c8b6;
+  background-color: #00c8b6;
+  font-size: 32rpx;
+  font-weight: bold;
+}

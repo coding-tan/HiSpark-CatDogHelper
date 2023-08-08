@@ -1,0 +1,26 @@
+<!--pages/signup.wxml-->
+<view class="logo">
+  <image src='/image/catdoghome.png'></image>
+</view>
+
+<view class="container">
+  <form bindsubmit="onSubmit">
+    <view class="form-group">
+      <text>用户昵称：</text>
+      <input type="text" name="username" placeholder="请输入用户昵称" />
+    </view>
+    <view class="form-group">
+      <text>密码：</text>
+      <input type="password" name="password" placeholder="请输入密码" />
+    </view>
+    <view class="form-group">
+      <text>确认密码：</text>
+      <input type="password" name="confirmPassword" placeholder="请再次输入密码" />
+    </view>
+    <button formType="submit">注册</button>
+  </form>
+  <view class="login">
+    <text>已有账号？</text>
+    <text class="login-btn" bindtap="goToLogin">登录</text>
+  </view>
+</view>

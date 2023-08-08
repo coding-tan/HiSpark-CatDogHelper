@@ -1,0 +1,38 @@
+/* pages/outer.wxss */
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo image{
+  margin-top: 0rpx;
+  width: 400rpx;
+  height: 300rpx;
+}
+
+.controlBtn { 
+  width: 50% !important; 
+  float:left;
+  color: #fff;
+  border: 2rpx solid rgb(247,177,43);
+  background-color: rgb(247,177,43);
+  font-size: 25rpx;
+  font-weight: bold;
+ }
+ .monitorBtn { 
+  width: 50% !important;
+  float:right;
+  color: #fff;
+  border: 2rpx solid rgb(215,165,95);
+  background-color: rgb(215,165,95);
+  font-size: 25rpx;
+  font-weight: bold;
+ }
+.swicth{
+  bottom: 0rpx; 
+  position: fixed;
+  width: 100%;
+}
+.video{
+  margin-top: 80rpx;
+}

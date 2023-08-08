@@ -1,0 +1,40 @@
+/* pages/reset/reset.wxss */
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo image{
+  margin-top: 100rpx;
+  width: 300rpx;
+  height: 200rpx;
+}
+page{
+    background: #ddd;  
+}
+ .content{
+  height:500px;
+  width: 300px;
+  margin:0px auto;
+  display: flex;
+  flex-direction: column;
+} 
+.content_one{
+  width: 300px;
+  height: 280px;
+  /* background: red; */
+}
+input{
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.pass{
+  width: 300px;
+  height: 80px;
+  margin-top: 30rpx;
+  background: #acc;
+  border-radius: 20rpx;
+}
+ .btn{
+  width: 300px; 
+}
